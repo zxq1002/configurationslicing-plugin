@@ -3,3 +3,6 @@
 .settings/
 target/
 work/
+src/main/main.iml
+src/test/test1.iml
+src/test/it/build-timeout-1.10/src/test/test.iml
