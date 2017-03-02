@@ -20,20 +20,20 @@ import configurationslicing.BooleanSlicer;
 import configurationslicing.TopLevelItemSelector;
 
 @Extension
-public class LogStashSlicer extends BooleanSlicer<AbstractProject<?,?>> {
-    public LogStashSlicer() {
+public class LogStashBuildWrapperSlicer extends BooleanSlicer<AbstractProject<?,?>> {
+    public LogStashBuildWrapperSlicer() {
         super(new LogstashSpec());
     }
     public static class LogstashSpec implements BooleanSlicer.BooleanSlicerSpec<AbstractProject<?,?>> {
 
         @Override
         public String getName() {
-            return "Logstash Slicer";
+            return "Logstash BuildWrapper Slicer";
         }
 
         @Override
         public String getUrl() {
-            return "logstash";
+            return "logstash.buildwrapper";
         }
 
         public List<AbstractProject<?,?>> getWorkDomain() {
